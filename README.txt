@@ -18,9 +18,9 @@ DRYLINE ROOFING CO. — сайт-концепт
   2. dash.cloudflare.com → Workers & Pages → Create → Import a repository → цей репозиторій.
   3. Project name: dryline-site (має збігатися з "name" у wrangler.jsonc).
      Build command: порожньо. Deploy command: npx wrangler deploy
-  4. Deploy. Сайт з'явиться на адресі dryline-site.<ваш-акаунт>.workers.dev.
-  Свій домен: у wrangler.jsonc поставте "workers_dev": false і додайте
-  "routes": [{ "pattern": "домен", "custom_domain": true }].
+  4. Deploy. Сайт відкривається на https://dryline.youfacta.com (адреса workers.dev вимкнена).
+  Домен прописаний у wrangler.jsonc (routes, custom_domain); щоб змінити, поміняйте pattern:
+  { "pattern": "dryline.youfacta.com", "custom_domain": true }.
   Посилання на 404-сторінці ведуть на "/", тож сайт має лежати в корені домену.
 
 Важливо
